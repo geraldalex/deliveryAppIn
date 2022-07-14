@@ -4,6 +4,7 @@ import styles from "./Shop.module.css";
  
 import { getApiResource, DB_ROOT,PROXY } from '../../utils/network';
 import { useEffect, useState } from "react";
+import MenuList from "../../components/Shop/MenuList";
  
  
  
@@ -31,6 +32,17 @@ const menuListKFC = res.restorans.KFC.map(({id, name, img, price}) => {
  
 })
 setMenuKFC(menuListKFC)
+
+const menuListMc = res.restorans.McDonalds.map(({id, name, img, price}) => {
+  return {
+    id,
+    name,
+    img,
+    price
+  }
+ 
+})
+setMenuMc(menuListMc)
 }
  
 useEffect(() => {
@@ -51,20 +63,11 @@ useEffect(() => {
 
  }
 
-{menuKFC && (
-  <ul>
-    {
-      menuKFC.map(({id, name, img, price}) => <li key={id}>
-        {name}
-        <img src={img} />
-        {price}
-        </li>)
-    }
-  </ul>
- )
+{menuKFC && <MenuList restoran={menuKFC}/> }
+{menuMc && <MenuList restoran={menuMc}/> }
   
 
- }
+
     
     </>
   )
