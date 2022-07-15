@@ -15,7 +15,7 @@ const MenuList = ({restoran}) => {
          <p>{name}</p>
          <p>{price}</p>
          </div>
-       <button>Купить</button>
+       <button className={styles.list__button}>В кошик</button>
         </li>)
     }
   </ul>

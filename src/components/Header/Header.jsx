@@ -14,8 +14,8 @@ const Header = () => {
     alt='icon'
     />
       <ul className={styles.list__container}>
-          <li><NavLink to="/">Shop</NavLink></li>
-          <li><NavLink to="/cart/?page=1" >Cart</NavLink></li>
+          <li><NavLink to="/">Витрина</NavLink></li>
+          <li><NavLink to="/cart" >Кошик</NavLink></li>
        
          
       </ul>
