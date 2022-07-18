@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+    justify-content: space-between;
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
+    }
+    
+    .container__restoran {
+       display: flex;
+       flex-wrap: wrap;
+        border : solid 2px var(--color-violet);
+        width: 45%;
+        border-radius: 8px;
+        flex-direction: column;
+        
+        
+    
+    }
+    
+    .container__menu {
+        display: flex;
+        flex-wrap: wrap;
+        border-color: var(--color-violet);
+        border : solid 2px var(--color-violet);
+        border-radius: 8px;
+        width: 45%;
+        height: 70vh;
+        overflow-y:scroll;
+        padding-left: var(--spacing-large);
+    
+    }
+    
+

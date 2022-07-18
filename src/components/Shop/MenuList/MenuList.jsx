@@ -1,10 +1,26 @@
 import styles from "./MenuList.module.css";
+import { addToCart, removeFromCart } from "../../../store/actions";
+import { useDispatch } from 'react-redux'
 
 
 
 
 
 const MenuList = ({restoran}) => {
+const dispatch = useDispatch();
+
+const add = (id, name, img, price) => {
+ dispatch(addToCart({
+[id]: {
+  id,
+  name,
+  img,
+  price
+}
+ })) 
+}
+
+
   return (
     <ul className={styles.list__container}>
     {
@@ -15,7 +31,7 @@ const MenuList = ({restoran}) => {
          <p>{name}</p>
          <p>{price}</p>
          </div>
-       <button className={styles.list__button}>В кошик</button>
+       <button className={styles.list__button} onClick={() => add(id, name, img, price)}>В кошик</button>
         </li>)
     }
   </ul>

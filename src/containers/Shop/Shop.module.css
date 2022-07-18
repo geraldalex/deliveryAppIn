@@ -35,7 +35,7 @@ padding-right: var(--spacing-large);
 
 .restoran__button {
     margin-bottom: 20px;
-    padding: 12px ;
+    padding: 32px 12px ;
     background-color: var(--color-dark-gray);
     border-color: var(--color-light-gray);
     cursor: pointer;
@@ -50,7 +50,7 @@ padding-right: var(--spacing-large);
 
 .restoran__button_active {
     margin-bottom: 20px;
-    padding: 12px ;
+    padding: 32px 12px  ;
     background-color: rgb(206, 192, 177);
     border-color: var(--color-light-gray);
     cursor: pointer;

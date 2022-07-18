@@ -7,7 +7,8 @@ list-style-type: none;
 }
 
 .list__item {
-width: 200px;
+width: 35%;
+height:fit-content;
 margin: 20px;
 padding: 20px;
 border-radius: 8px;
@@ -20,10 +21,12 @@ flex-direction: column;
 
 .item_photo {
 width: 100%;
-height: 110px;
+height:250px;
 border-radius: 8px;
 object-fit: cover;
 }
+
+
 
 .item_text {
 display: flex;
@@ -32,12 +35,13 @@ align-items:center;
 }
 
 .list__button {
-    padding: 4px 28px;
+    padding: 10px 28px;
     background-color: rgb(206, 192, 177);
     border-color: var(--color-light-gray);
     cursor: pointer;
     border-radius: 8px;
-    width: 70%;
+    width: 60%;
+    
     align-self: flex-end;
     
     
