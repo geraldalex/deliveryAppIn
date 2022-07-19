@@ -1,36 +1,66 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
     padding: 0;
     justify-content: space-between;
     padding-left: var(--spacing-large);
     padding-right: var(--spacing-large);
-    }
-    
-    .container__restoran {
-       display: flex;
-       flex-wrap: wrap;
-        border : solid 2px var(--color-violet);
-        width: 45%;
-        border-radius: 8px;
-        flex-direction: column;
-        
-        
-    
-    }
-    
-    .container__menu {
-        display: flex;
-        flex-wrap: wrap;
-        border-color: var(--color-violet);
-        border : solid 2px var(--color-violet);
-        border-radius: 8px;
-        width: 45%;
-        height: 70vh;
-        overflow-y:scroll;
-        padding-left: var(--spacing-large);
-    
-    }
-    
+}
 
+.container__form {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px var(--color-violet);
+    width: 45%;
+    border-radius: 8px;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-top: 3%;
+
+
+
+}
+
+.container__menu {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: var(--color-violet);
+    border: solid 2px var(--color-violet);
+    border-radius: 8px;
+    width: 45%;
+    height: 70vh;
+    overflow-y: scroll;
+    padding-left: var(--spacing-large);
+
+}
+
+.form__input {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding: 22px 12px;
+    background-color: var(--color-dark-gray);
+    border-color: var(--color-light-gray);
+   
+    border-radius: 8px;
+    width: 80%;
+}
+
+.container__submit {
+    display: flex;
+    margin-top: 3%;
+    justify-content: end;
+    margin-right: var(--spacing-large);
+    align-items: center;
+}
+
+.container__submit__button {
+    
+    padding: 16px 12px;
+    background-color: var(--color-dark-gray);
+    border-color: var(--color-violet);
+    cursor: pointer;
+    border-radius: 8px;
+    width: 12%;
+    margin-left: 5%;
+}

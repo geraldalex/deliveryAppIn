@@ -26,41 +26,33 @@
     height: 250px;
     border-radius: 8px;
     object-fit: cover;
-    
-}
 
+}
 
 
 .item_text {
-
-margin-bottom: 20%;
-
+    margin-bottom: 20%;
 }
 
 .list__buttons__count {
-   
+
     background-color: rgb(206, 192, 177);
     border-color: var(--color-light-gray);
-    cursor: pointer;
     border-radius: 8px;
     width: 90%;
     display: flex;
-    justify-content:space-between;
+    justify-content: end;
     align-items: center;
-    
-    
 
 }
 
 .list__count {
-
-
+    margin: auto;
 }
 
 .list__buttons {
     display: flex;
     flex-direction: column;
-   
     
 
 }
@@ -69,9 +61,9 @@ margin-bottom: 20%;
     display: flex;
     width: 35%;
     align-items: center;
-    justify-content:end;
+    justify-content: end;
     flex-direction: column;
     margin-left: 5%;
-   
+
 
 }
