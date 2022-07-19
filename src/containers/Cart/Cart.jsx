@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux/es/exports";
 import styles from "./Cart.module.css";
 import CartItems from "../../components/CartItems";
 import {  DB_ROOT, PROXY } from "../../utils/network";
 import { useEffect, useState } from "react";
+
 
 const Cart = () => {
   const [name, setName] = React.useState('');
@@ -14,6 +16,11 @@ const Cart = () => {
 
   const [order, setOrder] = useState(false)
 
+
+  const storeData = useSelector((state) => state.favoriteReducer);
+  const itemsId = Object.keys(storeData);
+
+  console.log(itemsId);
   useEffect(() => {
 
   },[totalPrice])
@@ -25,7 +32,8 @@ const Cart = () => {
         phone,
         email,
         adress,
-        totalPrice
+        totalPrice,
+        itemsId
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
@@ -36,7 +44,9 @@ const Cart = () => {
 
   return (
     <>
+    
       <div className={styles.container}>
+        
         <div className={styles.container__form}>
         <form onSubmit={handleSubmit}>
 
