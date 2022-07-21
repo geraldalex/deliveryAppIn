@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/deliveryAppIn/">
         <div className={styles.wrapper}>
           <Header />
 
